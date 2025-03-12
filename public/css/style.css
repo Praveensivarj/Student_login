@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #e48e2c;
+}
+
+.container,
+.container-fluid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background: #fff;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.container .text{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: #e48e2c;
+}
+
+.container form{
+    margin-top: -20px;
+}
+
+.container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+form .data label{
+    font-size: 18px;
+}
+
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+
+form .data input:focus{
+    border-color: #e48e2c;
+    border-bottom-width: 2px;
+}
+
+form .forgot-password{
+    margin-top: -8px;
+}
+
+form .forgot-password a{
+    color: #e48e2c;
+    text-decoration: none;
+}
+
+select{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+
+form .forgot-password a:hover{
+    text-decoration: underline;
+}
+
+form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    background: #e48e2c;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form .signup-link{
+    text-align: center;
+}
+
+form .signup-link a{
+    color: #e48e2c;
+    text-decoration: none;
+}
+
+form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+.container-fluid{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    font-weight: 500;
+    font-size: 18px;
+    color: #34495e;
+}
+
+nav .menu a{
+    margin: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #e48e2c;
+}
+
+nav .menu a:hover{
+    text-decoration: underline;
+}
+
+.container-fluid h2,.container-fluid h3{
+    font-weight: 400;
+}
+
+.container-fluid img{
+    width: 200px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+.good{
+    color: green;
+    text-align: center;
+    padding: 10px;
+}
