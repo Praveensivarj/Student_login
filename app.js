@@ -1,8 +1,6 @@
 const express =require('express'),app = express(), path = require('path'), hbs = require('hbs');
 const mysql = require('mysql'), dotenv = require('dotenv'), cookieParser = require('cookie-parser');
-dotenv.config({
-    path: "./.env",
-});
+require("dotenv").config();
 
 const port = process.env.PORT
 
@@ -39,6 +37,6 @@ app.listen(port, (err)=>{
         console.log(err);
     }
     else{
-        console.log(`Server is running on ${port}`);
+        console.log(`Server is running on http://localhost:${port}`);
     }
 });
